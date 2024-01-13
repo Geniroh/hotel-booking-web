@@ -4,7 +4,7 @@
 :root {
   --dark: #101828;
   --light: #e4e7ec;
-  --green: #1a936f;
+  --green: #157347;
   --grey: #98a2b3;
   --darkblue: #1d2939;
   --fieldtext: #344054;
@@ -22,7 +22,6 @@ body {
   background: #f9f9f9;
   font-family: "Work Sans", sans-serif;
   color: var(--fieldtext);
-  border: 1px solid red;
 }
 
 a {
@@ -55,6 +54,79 @@ button {
 }
 
 .section-white {
+  background: #fff;
+}
+
+.section-grey {
+  background: var(--grey);
+}
+
+.section-green {
+  background: var(--green);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.delux-heading .main-title {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--fieldtext);
+  font-weight: 600;
+}
+.delux-heading .sub-title {
+  color: var(--grey);
+  font-size: 12px;
+}
+
+.ul-normal {
+  list-style: disc;
+}
+
+.normal-text {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--fieldtext);
+  font-weight: 400;
+}
+
+.inline-list-with-dots {
+  display: flex;
+  gap: 5px;
+}
+.inline-list-with-dots span:not(:last-child)::after {
+  content: "•";
+  margin-left: 5px;
+}
+
+.my-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  color: var(--fieldtext);
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.my-btn:hover {
+  opacity: 0.8;
+}
+
+.loading-rooms {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
   background: #fff;
 }
 
@@ -147,6 +219,25 @@ button {
   justify-content: center;
   align-items: center;
 }
+.progress-bars-wrapper .bar.done {
+  background: var(--green);
+  position: relative;
+}
+.progress-bars-wrapper .bar.done::before {
+  content: "✓";
+  position: absolute;
+  color: #fff;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--green);
+  border-radius: 36px;
+}
 .progress-bars-wrapper .bar-1 {
   border: 1px solid var(--green);
   position: relative;
@@ -224,6 +315,9 @@ button {
 .calendar-wrapper .calendar .dayContainer {
   border: 0;
   flex: 1;
+}
+.calendar-wrapper .calendar .flatpickr-disabled {
+  color: red;
 }
 .calendar-wrapper .calendar-btn {
   display: flex;
@@ -312,7 +406,7 @@ button {
   gap: 5px;
 }
 .reservation-wrapper .details .date-details .top {
-  color: var(--light);
+  color: #667085;
   font-size: 12px;
   line-height: 14.4px;
 }
@@ -321,6 +415,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3px;
   font-size: 14px;
 }
 .reservation-wrapper .details .date-details .date-info i {
@@ -328,17 +423,20 @@ button {
   cursor: pointer;
 }
 .reservation-wrapper .details .date-details .bottom {
-  color: var(--light);
+  color: #667085;
   font-size: 12px;
   line-height: 14.4px;
+}
+.reservation-wrapper .details .grid-title {
+  font-size: 14px;
 }
 .reservation-wrapper .reservation-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
-  background: var(--grey);
-  color: #fff;
+  background: var(--light);
+  color: var(--fieldtext);
   border-radius: 6px;
   padding: 10px 15px;
   cursor: pointer;
@@ -497,7 +595,6 @@ button {
 
 .splide__slide.is-active {
   opacity: 1;
-  border: 1px solid var(--light);
 }
 
 .thumbnails {

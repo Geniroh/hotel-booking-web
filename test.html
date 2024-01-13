@@ -38,6 +38,15 @@
     </header>
     <main class="">
 
+        <div class="loading-rooms hidden" id="loadingScreen">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div>
+                Finding Rooms
+            </div>
+        </div>
+
         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
@@ -50,22 +59,20 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="room-cards">
-                                        <div class="room-card">
-                                            <div class="room-card-title">
-                                                <h1>Deluxe King Room</h1>
-                                                <div class="">
-                                                    <span>Sleeps 31</span>
-                                                    <span>1 king</span>
-                                                    <span>35m²</span>
-                                                </div>
+                                    <div class="delux-heading mb-3">
+                                        <h1 class="main-title">Deluxe King Room</h1>
+                                        <div class="sub-title">
+                                            <div class="inline-list-with-dots">
+                                                <span>Sleeps 31</span>
+                                                <span>1 king</span>
+                                                <span>35m²</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
+                                
                                 <div class="col-3 col-sm-12 col-md-6">
-                                    <ul>
+                                    <ul class="ul-normal normal-text">
                                         <li>Color television</li>
                                         <li>Bathroom amenities</li>
                                         <li>Ironing board</li>
@@ -74,7 +81,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-3 col-sm-12 col-md-6">
-                                    <ul>
+                                    <ul class="ul-normal normal-text">
                                         <li>Color television</li>
                                         <li>Bathroom amenities</li>
                                         <li>Ironing board</li>
@@ -83,7 +90,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-3 col-sm-12 col-md-6">
-                                    <ul>
+                                    <ul class="ul-normal normal-text">
                                         <li>Color television</li>
                                         <li>Bathroom amenities</li>
                                         <li>Ironing board</li>
@@ -96,8 +103,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                  <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">View Images</button>
+                <div class="modal-footer" style="align-self: self-start;">
+                  <button class="btn btn-success btn-small" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">View Images</button>
                 </div>
               </div>
             </div>
@@ -153,6 +160,7 @@
               </div>
             </div>
           </div>
+          
           <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
 
         <section>

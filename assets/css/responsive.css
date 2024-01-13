@@ -38,6 +38,12 @@
   .navs .bottom-nav .nav-links {
     display: none;
   }
+  .reservation-wrapper {
+    margin-top: 20px;
+  }
+  .reservation-wrapper .title {
+    font-size: 18px;
+  }
 }
 /* For tablet */
 @media (min-width: 768px) and (max-width: 1023px) {

@@ -30,6 +30,17 @@ document.addEventListener('DOMContentLoaded', function(){
             inline: true,
             mode: "range",
             showMonths: result,
+                dateFormat: "Y-m-d",
+                disable: [
+                    {
+                        from: "2024-01-13",
+                        to: "2024-01-17"
+                    },
+                    {
+                        from: "2025-09-01",
+                        to: "2025-12-01"
+                    }
+                ]
         });
     }
 
@@ -123,5 +134,18 @@ document.addEventListener('DOMContentLoaded', function(){
       
       splide.mount();
 
+        setTimeout(function() {
+          hideLoadingRooms();
+        }, 2000); 
+      
+        function hideLoadingRooms() {
+          var loadingElement = document.querySelector('#loadingScreen');
+      
+          if (loadingElement) {
+            loadingElement.classList.add('hidden');
+          }
+        }
+
+      
     // testfunc()
 });

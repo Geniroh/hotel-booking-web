@@ -12,6 +12,14 @@
     <title>Hotel Booking</title>
 </head>
 <body>
+    <div class="loading-rooms" id="loadingScreen">
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div>
+            Finding Rooms
+        </div>
+    </div>
     <header class="section-white">
             <div class="navs">
                 <div class="top-nav">
@@ -40,7 +48,7 @@
 
         <div class="progress-bars-wrapper">
             <div>
-                <div class="bar bar-1">1</div>
+                <div class="bar bar-1 done">1</div>
                 <span>Dates</span>
             </div>
             <div>
@@ -48,14 +56,14 @@
                 <span>Rooms</span>
             </div>
             <div>
-                <div class="bar bar-3">3</div>
+                <div class="bar bar-3 ">3</div>
                 <span>Checkout</span>
             </div>
         </div>
 
         <section class="container">
             <div class="row">
-                <div class="col col-lg-8 col-md-12 col-sm-12">
+                <div class="col col-lg-7 col-md-12 col-sm-12">
                     <div class="rooms-wrapper">
                         <div class="back-nav">
                             <div><i class="bi bi-chevron-left"></i> Back to villa toscana hotel</div>
@@ -88,7 +96,7 @@
                                         </div>
                                     </div>
                                     <div class="room-card-links">
-                                        <div class="link-left">Room details <span>>></span></div>
+                                        <div class="link-left" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Room details <span>>></span></div>
                                         <div class="link-right">Book Room</div>
                                     </div>
                                 </div>
@@ -236,106 +244,183 @@
         
         
         
-                <div class="col col-lg-4 col-md-12  col-sm-12">
+                <div class="col col-lg-5 col-md-12  col-sm-12">
                     <div class="reservation-wrapper">
                         <div class="title">
                             Reservation Summary
                         </div>
                         <div class="details">
-                            <div class="date-details">
-                                <div class="top">CHECK IN</div>
-                                <div class="date-info"><span>Mon, Oct 10, 2022</span> <i class="bi bi-chevron-down"></i></div>
-                                <div class="bottom">After 2:00pm</div>
+                            <div class="container-fluid">
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <div class="delux-heading">
+                                            <div class="sub-title">CHECK IN</div>
+                                            <div class="main-title">Mon, Oct 10, 2022</span> <i class="bi bi-chevron-down"></i></div>
+                                            <div class="sub-title">After 2:00pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="delux-heading">
+                                            <div class="sub-title">CHECK IN</div>
+                                            <div class="main-title">Mon, Oct 10, 2022</span> <i class="bi bi-chevron-down"></i></div>
+                                            <div class="sub-title">After 2:00pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="delux-heading">
+                                            <div class="sub-title">DURATION OF STAY</div>
+                                            <div class="main-title">2 Nights</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="delux-heading">
+                                            <div class="sub-title">ROOM SELECTED</div>
+                                            <div class="main-title">Deluxe King Room</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="delux-heading">
+                                            <div class="main-title align-self-center">₦22,500.00</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="date-details">
-                                <div class="top">CHECK IN</div>
-                                <div class="date-info"><span>Mon, Oct 10, 2022</span> <i class="bi bi-chevron-down"></i></div>
-                                <div class="bottom">After 2:00pm</div>
-                            </div>
-                            <div class="date-details">
-                                <div class="top">DURATION OF STAY</div>
-                                <div class="date-info"><span>2 Nights</span></div>
-                            </div>
+
+                            <form action="" class="mt-3">
+                                <div>
+                                    <label for="date1" class="form-label">Apply Coupon</label>
+                                    <input type="text" class="form-control" id="date1" placeholder="check-in-date">
+                                </div>
+                            </form>
                         </div>
-                        <div class="reservation-btn">
+                        <a href="./card-payment.html" class="my-btn section-green text-white">
                             Check out
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-white">
-            <section
-                id="thumbnail-carousel"
-                class="splide"
-                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
-                >
-                <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </li>
-                        </ul>
-                </div>
-            </section>
-        </section>
 
         <section>
             <!-- IMAGE MODAL -->
-            <div class="modal fade" id="roomModalImg1" tabindex="-1" aria-labelledby="roomModalImg1" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header ">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Deluxe King Room</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Room Amenities</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
-                            <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                <img src="./assets/img/image 3.png" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/img/image 3.png" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/img/image 3.png" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/img/image 3.png" alt="">
-                                </li>
-                            </ul>
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="delux-heading mb-3">
+                                            <h1 class="main-title">Deluxe King Room</h1>
+                                            <div class="sub-title">
+                                                <div class="inline-list-with-dots">
+                                                    <span>Sleeps 31</span>
+                                                    <span>1 king</span>
+                                                    <span>35m²</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-3 col-sm-12 col-md-6">
+                                        <ul class="ul-normal normal-text">
+                                            <li>Color television</li>
+                                            <li>Bathroom amenities</li>
+                                            <li>Ironing board</li>
+                                            <li>Safe</li>
+                                            <li>Adapted Room Doors</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-sm-12 col-md-6">
+                                        <ul class="ul-normal normal-text">
+                                            <li>Color television</li>
+                                            <li>Bathroom amenities</li>
+                                            <li>Ironing board</li>
+                                            <li>Safe</li>
+                                            <li>Adapted Room Doors</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-sm-12 col-md-6">
+                                        <ul class="ul-normal normal-text">
+                                            <li>Color television</li>
+                                            <li>Bathroom amenities</li>
+                                            <li>Ironing board</li>
+                                            <li>Safe</li>
+                                            <li>Adapted Room Doors</li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
                             </div>
-                        </section>
-                            
-                            
-                        <ul id="thumbnails" class="thumbnails">
-                            <li class="thumbnail">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </li>
-                            <li class="thumbnail">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </li>
-                            <li class="thumbnail">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </li>
-                            <li class="thumbnail">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </li>
-                        </ul>
-
+                        </div>
                     </div>
+                    <div class="modal-footer" style="align-self: self-start;">
+                      <button class="btn btn-success btn-small" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">View Images</button>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Deluxe King Room</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="section-white">
+                            <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+                                <div class="splide__track">
+                                  <ul class="splide__list">
+                                    <li class="splide__slide">
+                                      <img src="./assets/img/Rectangle 82.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/img/Rectangle 82.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/img/Rectangle 82.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/img/Rectangle 82.png" alt="">
+                                    </li>
+                                  </ul>
+                                </div>
+                              </section>
+                              
+                              
+                              <ul id="thumbnails" class="thumbnails">
+                                <li class="thumbnail">
+                                    <img src="./assets/img/Rectangle 82.png" alt="">
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/img/Rectangle 82.png" alt="">
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/img/Rectangle 82.png" alt="">
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/img/Rectangle 82.png" alt="">
+                                </li>
+                              </ul>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back</button>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         </section>
 
         
