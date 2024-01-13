@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <header class="section-white">
+            <div class="navs">
+                <div class="top-nav">
+                    <div><i class="bi bi-chevron-left big-screen"></i> <i class="bi bi-arrow-left small-screen"></i>Back to villa toscana hotel</div>
+                </div>
+                <div class="bottom-nav">
+                    <div class="nav-brands"> <a href="/">Villa toscana</a></div>
+                    <div class="big-screen">
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Hotel Info</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Find Reservations</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">+2348033169383</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="btn btn-success small-screen"><i class="bi bi-telephone-fill"></i> Make Reservation</div>
+                </div>
+            </div>
+    </header>
+    <main class="">
+
+        <div class="progress-bars-wrapper">
+            <div>
+                <div class="bar bar-1">1</div>
+                <span>Dates</span>
+            </div>
+            <div>
+                <div class="bar bar-2">2</div>
+                <span>Rooms</span>
+            </div>
+            <div>
+                <div class="bar bar-3">3</div>
+                <span>Checkout</span>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="row">
+                <div class="col col-md-8">
+                    <div class="calendar-wrapper">
+                        <div class="title">
+                            Select Date
+                        </div>
+                        <div class="details">
+                            <div>
+                                <label class="form-label">Guest</label>
+                                <select class="form-select">
+                                    <option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>
+                                  </select>
+                            </div>
+                            <div>
+                                <label for="date1" class="form-label">Date</label>
+                                <input type="text" class="form-control" id="date1" placeholder="check-in-date">
+                            </div>
+                            <div>
+                                <label for="date2" class="form-label">Date</label>
+                                <input type="text" class="form-control" id="date2" placeholder="check-in-date">
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="calendar-date">
+                                        <input type="date" class="form-control my-calendar" id="myID" placeholder="check-in-date" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar-btn">
+                            <button class="btn btn-success">Search For Room</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-md-4">
+                    <div class="reservation-wrapper">
+                        <div class="title">
+                            Reservation Summary
+                        </div>
+                        <div class="details">
+                            <div class="date-details">
+                                <div class="top">CHECK IN</div>
+                                <div class="date-info"><span>Mon, Oct 10, 2022</span> <i class="bi bi-chevron-down"></i></div>
+                                <div class="bottom">After 2:00pm</div>
+                            </div>
+                            <div class="date-details">
+                                <div class="top">CHECK IN</div>
+                                <div class="date-info"><span>Mon, Oct 10, 2022</span> <i class="bi bi-chevron-down"></i></div>
+                                <div class="bottom">After 2:00pm</div>
+                            </div>
+                            <div class="date-details">
+                                <div class="top">DURATION OF STAY</div>
+                                <div class="date-info"><span>2 Nights</span></div>
+                            </div>
+                        </div>
+                        <a class="reservation-btn" href="/rooms.html">
+                            Check out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
