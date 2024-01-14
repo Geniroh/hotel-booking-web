@@ -4,47 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <title>Document</title>
+    <title>Hotel Booking</title>
 </head>
 <body>
-    <header class="p-16">
-        <div class="container">
-            <div class="navs">
-                <div class="top-nav">
-                    <div><i class="bi bi-chevron-left"></i> Back to villa toscana hotel</div>
+    <!-- <div class="loading-rooms" id="loadingScreen">
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div>
+            Finding Rooms
+        </div>
+    </div> -->
+    <header class="section-white">
+        <div class="navs">
+            <div class="top-nav">
+                <div><i class="bi bi-chevron-left big-screen"></i> <i class="bi bi-arrow-left small-screen"></i>Back to villa toscana hotel</div>
+            </div>
+            <div class="bottom-nav">
+                <div class="nav-brands"> <a href="/">Villa toscana</a></div>
+                <div class="big-screen">
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Hotel Info</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Find Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">+2348033169383</a>
+                        </li>
+                      </ul>
                 </div>
-                <div class="bottom-nav">
-                    <div class="nav-brands"> <a href="">Villa toscana</a></div>
-                    <div class="nav-links">
-                        <a href="">Hotel Info</a>
-                        <a href="">Find Reservations</a>
-                        <a href="">+2348033169383</a>
-                    </div>
-                </div>
+                <div class="btn btn-success small-screen"><i class="bi bi-telephone-fill"></i> Make Reservation</div>
             </div>
         </div>
     </header>
-    <main class="p-16">
-
+    <main class="">
         <div class="progress-bars-wrapper">
-            <div class="bar bar-1">1</div>
-            <div class="bar bar-2">2</div>
-            <div class="bar bar-3">3</div>
+            <div>
+                <div class="bar bar-1 done">1</div>
+                <span>Dates</span>
+            </div>
+            <div>
+                <div class="bar bar-2 done">2</div>
+                <span>Rooms</span>
+            </div>
+            <div>
+                <div class="bar bar-3 ">3</div>
+                <span>Checkout</span>
+            </div>
         </div>
 
         <section class="container">
             <div class="row">
-                <div class="col col-md-7 p-32">
-                    <div class="payment-wrapper section-white">
-                        <div class="top-nav">
-                            <div><i class="bi bi-chevron-left"></i> Back</div>
+                <div class="col col-lg-7 col-md-12 col-sm-12">
+                    <div class="section-white p-10">
+                        <div class="back-nav">
+                            <div><i class="bi bi-chevron-left"></i> Back to villa toscana hotel</div>
                         </div>
-
-
+                       
                         <div class="grid-title my-3">
                             <div>
                                 <div class="main-title">Deluxe King Room</div>
@@ -62,19 +85,31 @@
                             </div>
                         </div>
 
-                        <div class="my-3">
-                            <div class="card-input">
+                        <div class="input-container">
+                            <div class="input-text-radio">
                                 <img src="assets/img/card-icon.png" alt="">
-                                <input type="text" name="" id="" placeholder="pay with card">
+                                <input type="text" name="" id="" placeholder="Pay with card">
                                 <input type="radio" name="" id="">
                             </div>
                         </div>
 
-                        <div class="my-3">
-                            <div class="card-input">
+                        <div class="input-container">
+                            <div class="input-text-radio">
                                 <img src="assets/img/bank-icon.png" alt="">
                                 <input type="text" name="" id="" placeholder="Bank Transfer">
                                 <input type="radio" name="" id="">
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <div class="input-text-select">
+                                <div>
+                                    <img src="./assets/img/nigeria-icon.png" alt="">
+                                    <select name="" id="">
+                                        <option value="+234">+234</option>
+                                    </select>
+                                </div>
+                                <input type="text" placeholder="Phone Number">
                             </div>
                         </div>
 
@@ -91,29 +126,42 @@
                         </div>
                     </div>
                 </div>
+        
+        
+        
+                <div class="col col-lg-5 col-md-12  col-sm-12">
+                    <div class="white-wrapper w-100">
+                       <div class="icon-bordered">
+                            <img src="./assets/img/flag-05.png" alt="">
+                       </div>
 
+                       <div>
+                            <div class="title">Bank Transfer</div>
+                            <span class="grey-text">Copy the account number below to complete order</span>
+                       </div>
+                       <div class="my-3">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="field-text">Bank</span>
+                                <span class="fw-bold">Access Bank</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="field-text">Bank Name</span>
+                                <span class="fw-bold">Attenvo group</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="field-text">Account Number</span>
+                                <span class="fw-bold">0693818717 <i class="bi bi-copy green-text"></i></span>
+                            </div>
 
-
-                <div class="col col-md-5 p-32">
-                    <div class="reservation-wrapper">
-                        <div class="title text-center">
-                            Pay With Card
                         </div>
-                       <div>
-                            <img src="./assets/img/image 3.png" alt="">
-                       </div>
-                       <div>
-                            <img src="./assets/img/SBP Tag - Payment Channels - NG 1.png" alt="">
-                       </div>
-
-                       <div>
-                        <button class="btn btn-success d-block">Proceed to payment</button>
-                       </div>
+                        <div class="grey-text">After payment, click on the button below to confirm payment</div>
+                        <div>
+                            <a href="./success-page.html" class="my-btn section-green text-white w-100">I have made my payment</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
         
     </main>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
