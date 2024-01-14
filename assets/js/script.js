@@ -16,7 +16,10 @@ document.addEventListener('DOMContentLoaded', function(){
         {
             from: "2025-09-01",
             to: "2025-12-01"
-        }
+        },
+        // single date below
+        "2024-01-24",
+        "2024-02-14"
         ]
     };
   

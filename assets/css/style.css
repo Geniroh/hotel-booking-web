@@ -341,11 +341,6 @@ button {
 }
 .calendar-wrapper .calendar .flatpickr-days {
   font-weight: 400;
-  gap: 5px;
-}
-.calendar-wrapper .calendar .dayContainer {
-  border: 0;
-  flex: 1;
 }
 .calendar-wrapper .calendar .flatpickr-disabled {
   color: red;
@@ -390,8 +385,6 @@ button {
 
 .flatpickr-month {
   margin-bottom: 16px;
-  display: flex;
-  align-items: center;
 }
 .flatpickr-month .cur-month {
   font-weight: 600 !important;
