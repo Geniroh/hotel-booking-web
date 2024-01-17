@@ -42,6 +42,10 @@ button {
   font: inherit;
 }
 
+footer {
+  margin-top: 100px;
+}
+
 .p-16 {
   padding: 16px;
 }
